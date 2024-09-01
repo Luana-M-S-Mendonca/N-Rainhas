@@ -3,9 +3,9 @@ import java.net.*;
 import java.util.*;
 
 public class ServidorDistribuidoNQueens {
-    private static final int PORTA = 12345;
-    private static List<int[]> solucoes = new ArrayList<>(); // Utilizando java.util.List
-    private static int n;
+
+    private static final int PORTA = 12345; //Define o numero da porta utilizada 
+    private static List<int[]> solucoes = new ArrayList<>(); //Instancia o vetor de soluções
 
     public static void main(String[] args) throws IOException {
         ServerSocket servidorSocket = new ServerSocket(PORTA);
