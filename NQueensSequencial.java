@@ -30,10 +30,10 @@ public class NQueensSequencial {
         resolverNQueens(new int[n], 0, solucoes);
 
         long fimTempo = System.nanoTime();
-        long duracao = (fimTempo - inicioTempo) / 1_000; // Tempo em milissegundos
+        long duracao = (fimTempo - inicioTempo) / 1_000; // Tempo em microsegundos
 
         System.out.println("Número total de soluções: " + solucoes.size());
-        System.out.println("Tempo de execução (ms): " + duracao);
+        System.out.println("Tempo de execução (µs): " + duracao);
 
         try {
             // Lança exceção se não houverem soluções possíveis
