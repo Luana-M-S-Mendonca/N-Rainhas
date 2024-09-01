@@ -53,10 +53,10 @@ public class ClienteDistribuidoNQueens {
 
         // Calcula o tempo de execução
         long fimTempo = System.nanoTime();
-        long duracao = (fimTempo - inicioTempo) / 1_000; // Tempo em microsegundos
+        long duracao = (fimTempo - inicioTempo) / 1_000_000_000; // Tempo em segundos
 
         // Exibe o tempo de execução no console, mesmo se não houver soluções
-        System.out.println("Tempo de execução (µs): " + duracao);
+        System.out.println("Tempo de execução (s): " + duracao);
 
         // Verifica se há soluções encontradas
         if (solucoes.isEmpty()) {
